@@ -16,14 +16,11 @@ public class UserDTO {
 
     private String userName;
 
-    private String firstName;
+    private String name;
 
-    private String lastName;
-
-    private String gmail;
+    private String email;
 
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 
-    private Long age;
 }

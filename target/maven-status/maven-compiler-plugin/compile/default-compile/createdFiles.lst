@@ -2,6 +2,7 @@ com\chatapp\dto\ChatDTO.class
 com\chatapp\dto\MessageType.class
 com\chatapp\config\WebSocketEventListener.class
 com\chatapp\ChatAppApplication.class
+com\chatapp\entities\UserEntity.class
 com\chatapp\dto\UserDTO.class
 com\chatapp\config\WebSocketConfig.class
 com\chatapp\controller\ChatController.class

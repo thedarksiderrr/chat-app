@@ -3,6 +3,7 @@ E:\Pc_Workspace\Spring_zeitech\chat-app\src\main\java\com\chatapp\dto\response\A
 E:\Pc_Workspace\Spring_zeitech\chat-app\src\main\java\com\chatapp\config\WebSocketEventListener.java
 E:\Pc_Workspace\Spring_zeitech\chat-app\src\main\java\com\chatapp\config\WebSocketConfig.java
 E:\Pc_Workspace\Spring_zeitech\chat-app\src\main\java\com\chatapp\dto\MessageType.java
+E:\Pc_Workspace\Spring_zeitech\chat-app\src\main\java\com\chatapp\entities\UserEntity.java
 E:\Pc_Workspace\Spring_zeitech\chat-app\src\main\java\com\chatapp\dto\UserDTO.java
 E:\Pc_Workspace\Spring_zeitech\chat-app\src\main\java\com\chatapp\ChatAppApplication.java
 E:\Pc_Workspace\Spring_zeitech\chat-app\src\main\java\com\chatapp\dto\ChatDTO.java
