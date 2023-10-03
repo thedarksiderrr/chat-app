@@ -37,7 +37,7 @@ function onConnected() {
     stompClient.subscribe('/topic/public', onMessageReceived);
 
     // Tell your username to the server
-    stompClient.send("/app/chat.addUser",
+    stompClient.send("/postMessage",
         {},
         JSON.stringify({sender: username, type: 'JOIN'})
     )
@@ -60,7 +60,7 @@ function sendMessage(event) {
             content: messageInput.value,
             type: 'CHAT'
         };
-        stompClient.send("/app/chat.sendMessage", {}, JSON.stringify(chatMessage));
+        stompClient.send("/getMessages", {}, JSON.stringify(chatMessage));
         messageInput.value = '';
     }
     event.preventDefault();
@@ -116,3 +116,30 @@ function getAvatarColor(messageSender) {
 
 usernameForm.addEventListener('submit', connect, true)
 messageForm.addEventListener('submit', sendMessage, true)
+
+
+function onSendData( ){
+      fetch("http://192.168.0.71:2000/postMessage",{
+                                                       // Adding method type
+                                                       method: "POST",
+
+                                                       // Adding body or contents to send
+                                                       body: JSON.stringify({
+                                                          content: document.getElementById("message").value,
+                                                              sender: "AdewrewsdfsdfdrewA",
+                                                              type : "CHAT"
+                                                       }),
+
+                                                       // Adding headers to the request
+                                                       headers: {
+                                                           "Content-type": "application/json; charset=UTF-8"
+                                                       }
+                                                   })
+                                                   .then(data => {
+
+                                                   })
+                                                   .catch(err => {
+                                                       // Catch and display errors
+                                                   })
+
+}
