@@ -119,27 +119,28 @@ messageForm.addEventListener('submit', sendMessage, true)
 
 
 function onSendData( ){
-      fetch("http://192.168.0.71:2000/postMessage",{
-                                                       // Adding method type
-                                                       method: "POST",
+    fetch("http://192.168.0.71:2000/postMessage",{
+        // Adding method type
+        method: "POST",
 
-                                                       // Adding body or contents to send
-                                                       body: JSON.stringify({
-                                                          content: document.getElementById("message").value,
-                                                              sender: "AdewrewsdfsdfdrewA",
-                                                              type : "CHAT"
-                                                       }),
+        // Adding body or contents to send
+        body: JSON.stringify({
+        content: document.getElementById("message").value,
+        sender: "PC",
+//        timestamp : document.getElementById("timestamp").value
+        type : "CHAT"
+        }),
 
-                                                       // Adding headers to the request
-                                                       headers: {
-                                                           "Content-type": "application/json; charset=UTF-8"
-                                                       }
-                                                   })
-                                                   .then(data => {
+        // Adding headers to the request
+        headers: {
+        "Content-type": "application/json; charset=UTF-8"
+        }
+    })
+    .then(data => {
 
-                                                   })
-                                                   .catch(err => {
-                                                       // Catch and display errors
-                                                   })
+    })
+    .catch(err => {
+    // Catch and display errors
+    })
 
 }
